@@ -1,0 +1,13 @@
+<h1>WORD COUNT</h1>
+<!-- {{ hithere }} -->
+
+<!-- <form class="" action="" method="post"> -->  <!-- methos="post" makes diff.. it fails -->
+<!-- <form class="" action="count"> --> <!-- This will also work. But not the way want.. hence below -->
+
+<form action="{% url 'count' %}">
+  <textarea name="fulltext" rows="10" cols="40"></textarea>
+  <br/>
+  <input type="submit" name="" value="Count!"/>
+  &nbsp;&nbsp; &nbsp;&nbsp; 
+  <a href="{% url 'about' %}" >About</a>
+</form>
